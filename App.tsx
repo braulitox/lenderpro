@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import Clients from './pages/Clients';
 import Loans from './pages/Loans';
 import Settings from './pages/Settings';
+import AIChat from './pages/AIChat';
 import { Menu } from 'lucide-react';
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         return <Clients />;
       case 'loans':
         return <Loans />;
+      case 'ai-assistant':
+        return <AIChat />;
       case 'settings':
         return <Settings />;
       default:

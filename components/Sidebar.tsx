@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Users, Banknote, Settings, Wallet } from 'lucide-react';
+import { LayoutDashboard, Users, Banknote, Settings, Wallet, MessageSquareCode } from 'lucide-react';
 
 interface SidebarProps {
   currentView: string;
@@ -11,6 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setView }) => {
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'clients', label: 'Clientes', icon: Users },
     { id: 'loans', label: 'Préstamos', icon: Banknote },
+    { id: 'ai-assistant', label: 'Asistente AI', icon: MessageSquareCode },
     { id: 'settings', label: 'Configuración', icon: Settings },
   ];
 
@@ -46,10 +47,10 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setView }) => {
 
       <div className="p-4 border-t border-slate-700">
         <div className="flex items-center gap-3 px-4 py-2">
-          <div className="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center text-xs font-bold">AD</div>
+          <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-xs font-bold text-white">SA</div>
           <div className="text-sm">
-            <p className="text-white font-medium">Admin User</p>
-            <p className="text-slate-500 text-xs">Gerente</p>
+            <p className="text-white font-medium">Braulio</p>
+            <p className="text-slate-500 text-xs">Architect</p>
           </div>
         </div>
       </div>
